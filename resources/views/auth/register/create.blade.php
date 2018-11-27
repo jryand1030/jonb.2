@@ -2,7 +2,7 @@
 
 @section('content')
 <h1>Sign up</h1>
-<form action="public/auth/register" method="POST">
+<form action="/auth/register" method="POST">
     @csrf
     <div class="form-group">
         <label>Name</label>

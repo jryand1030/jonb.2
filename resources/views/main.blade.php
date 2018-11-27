@@ -42,11 +42,11 @@
           </li>
           <li class="nav-item">
             <!-- <a class="nav-link" href="ScrollMagic/index">Link</a> -->
-            <a href="/auth/login" class="nav-link">Login</a>
+            <a href="/public/auth/login" class="nav-link">Login</a>
           </li>
           <li class="nav-item">
             <!-- <a class="nav-link" href="ScrollMagic/index">Link</a> -->
-            <a href="/auth/register" class="nav-link">Sign Up</a>
+            <a href="/public/auth/register" class="nav-link">Sign Up</a>
           </li>
 
 
