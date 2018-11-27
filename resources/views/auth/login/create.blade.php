@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Login</h1>
-    <form action="/auth/login" method="POST">
+    <form action="public/auth/login" method="POST">
         @csrf
         <div class="form-group">
             <label>Email</label>
