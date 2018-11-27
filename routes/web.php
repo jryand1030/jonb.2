@@ -19,16 +19,16 @@ Route::get('/', function () {
 });
 
 //Create user account in Joboard
-Route::get('auth/register', 'auth\RegisterController@create');
+Route::get('auth/register', 'Auth\RegisterController@create');
 
-Route::post('auth/register', 'auth\RegisterController@store');
+Route::post('auth/register', 'Auth\RegisterController@store');
 
 //user loggin into Joboard
-Route::get('auth/login', 'auth\LoginController@create');
+Route::get('auth/login', 'Auth\LoginController@create');
 
-Route::post('auth/login', 'auth\LoginController@store');
+Route::post('auth/login', 'Auth\LoginController@store');
 
-Route::get('auth/logout', 'auth\LoginController@destroy');
+Route::get('auth/logout', 'Auth\LoginController@destroy');
 
 Route::get('displaymenu', function(){
     return view('displaymenu');
