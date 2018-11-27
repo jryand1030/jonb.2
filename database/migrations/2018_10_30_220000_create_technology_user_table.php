@@ -14,9 +14,9 @@ class CreateTechnologyUserTable extends Migration
     public function up()
     {
         Schema::create('technology_user', function (Blueprint $table) {
-            $table->integer('technology_id');
+            $table->integer('technology_id')->unsigned();
             $table->foreign('technology_id')->references('id')->on('technologies');
-            $table->integer('user_id');
+            $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
